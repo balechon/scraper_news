@@ -1,0 +1,13 @@
+news_sites:
+  lahora:
+    url: https://www.lahora.com.ec/
+    queries:
+      homepage_article_links: "//h3/a/@href"
+      article_body: "//div/div[1]/div/div[7]/div/div/div/div/div//text()"
+      article_title: "//h1/text()"
+  elcomercio:
+    url: https://www.elcomercio.com/'
+    queries:
+      homepage_article_links: '//h3[@class="article-highlighted__title"]/a/@href'
+      article_body: '//div[@class="entry__content"]/p//text()'
+      article_title: "//h1/text()"
